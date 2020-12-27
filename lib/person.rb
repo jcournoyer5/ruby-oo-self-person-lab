@@ -10,6 +10,10 @@ class Person
     
     def name
     puts @name
+    end  
+    
+    def read
+        puts "#{@name}"
     end    
     
 end 
@@ -18,7 +22,7 @@ end
     
    stella = Person.new("Stella")
    
-   puts stella
+   puts stella.name
     
 def take_bath
         
