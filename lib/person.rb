@@ -7,6 +7,11 @@ class Person
     #@happiness = happiness
     #@hygiene = hygiene
     end
+    
+    def name
+    puts @name
+    end    
+    
 end 
     
 
