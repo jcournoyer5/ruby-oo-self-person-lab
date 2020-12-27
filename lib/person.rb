@@ -1,26 +1,19 @@
 # your code goes here
 
 class Person
-    
-   # def initialize(name)
-  
+    def initialize(name)
+    @name = name
    # @bank_account = bank_account
     #@happiness = happiness
     #@hygiene = hygiene
-   # end
+    end
+end 
     
-    
-  def name=(person_name)
-    @name = name
-  end
 
-  def name
-    @name
-  end
-end
     
-   stella = Person.new
-   stella.name = "Stella" 
+   stella = Person.new("Stella")
+   
+   puts stella
     
 def take_bath
         
