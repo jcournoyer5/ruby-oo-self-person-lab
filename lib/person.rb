@@ -1,28 +1,30 @@
 # your code goes here
 
 class Person
-    def initialize(name)
+  def initialize(name)
     @name = name
    # @bank_account = bank_account
     #@happiness = happiness
     #@hygiene = hygiene
-    end
+  end
     
-    def name
+  def name
     puts @name
-    end  
+  end  
     
-    def read
-        puts "#{@name}"
-    end    
-    
+ def read
+    puts "#{@name}"
+ end  
 end 
     
 
     
-   stella = Person.new("Stella")
+ stella = Person.new("Stella")
    
-   puts stella.name
+ puts stella.name
+ puts stella.read
+   
+   
     
 def take_bath
         
