@@ -39,7 +39,7 @@ end
     
 
     
- stella = Person.new("Stella", 25, 5, 5)
+ stella = Person.new("Stella", $25, 8, 8)
    
  puts stella.name
  puts stella.read
