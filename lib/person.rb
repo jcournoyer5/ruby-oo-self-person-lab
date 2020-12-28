@@ -23,6 +23,13 @@ class Person
   
   def hygiene
     puts @hygiene
+    
+    def take_bath
+        
+        self.hygiene += 4
+    
+        "♪ Rub-a-dub just relaxing in the tub ♫"
+    end
   end
     
  def read
@@ -42,9 +49,4 @@ end
    
    
     
-def take_bath
-        
-        self.hygiene += 4
-    
-        "♪ Rub-a-dub just relaxing in the tub ♫"
-end
+
