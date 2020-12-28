@@ -2,6 +2,7 @@
 
 class Person
   def initialize(name, bank_account, happiness, hygiene)
+   
     @name = name
     @bank_account = bank_account
     @happiness = happiness
@@ -31,10 +32,13 @@ end
     
 
     
- stella = Person.new("Stella")
+ stella = Person.new("Stella", 25, 5, 5)
    
  puts stella.name
  puts stella.read
+ puts stella.bank_account
+ puts stella.happiness
+ puts stella.hygiene
    
    
     
