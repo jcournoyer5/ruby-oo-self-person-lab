@@ -1,7 +1,9 @@
 # your code goes here
 
 class Person
-  def initialize(name, bank_account="$25", happiness="8", hygiene="8")
+  attr_accessor :name, :bank_account, :happiness, :hygiene
+  
+  def initialize(name)
    
     @name = name
     @bank_account = bank_account
@@ -39,13 +41,13 @@ end
     
 
     
- stella = Person.new("Stella", $25, 8, 8)
+# stella = Person.new("Stella", $25, 8, 8)
    
- puts stella.name
- puts stella.read
- puts stella.bank_account
- puts stella.happiness
- puts stella.hygiene
+# puts stella.name
+# puts stella.read
+# puts stella.bank_account
+# puts stella.happiness
+# puts stella.hygiene
    
    
     
