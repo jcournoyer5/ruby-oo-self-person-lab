@@ -4,7 +4,7 @@ class Person
   attr_accessor :bank_account, :happiness, :hygiene
   attr_reader :name
   
-  def initialize(name)
+  def initialize(name, bank_account)
    
     @name = name
     @bank_account = bank_account
@@ -13,11 +13,17 @@ class Person
   end
     
   
+def bank_account=(new_bank_account)
+  @bank_account = new_bank_account
   
- person = Person.new("Stella")
-  person
+end
   
-
+ person = Person.new("Stella", "$25")
+ 
+ puts person.name
+ puts person.bank_account
+ 
+ 
         
 #         self.hygiene += 4
     
