@@ -30,6 +30,17 @@ def happiness=(new_happiness)
     
 end  
 
+def hygiene=(new_hygiene)
+  @hygiene 
+  if new_hygiene  > 10
+    @hygiene  = 10
+  elsif new_hygiene  < 0
+    @hygiene  = 0
+  else 
+    @hygiene  =  new_hygiene 
+  end
+    
+end  
 
 # person = Person.new("Stella", "$25")
  
