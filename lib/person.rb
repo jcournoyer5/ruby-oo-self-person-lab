@@ -42,6 +42,15 @@ def hygiene=(new_hygiene)
     
 end  
 
+def happiness=(new_happiness)
+  @happiness
+  if new_happiness > 7
+    puts true
+  else
+    puts false
+  end   
+end  
+
 # person = Person.new("Stella", "$25")
  
 # puts person.name
