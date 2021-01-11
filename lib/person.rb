@@ -81,8 +81,11 @@ end
    @hygiene = @hygiene - 3
    if @hygiene < 0
      @hygiene = 0
-   end   
-
+   end  
+   @happiness = @happiness + 2
+   if @happiness > 10
+     @happiness = 10
+   end
  end
 
 # person = Person.new("Stella", "$25")
