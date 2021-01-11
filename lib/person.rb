@@ -68,11 +68,22 @@ end
  
  def take_bath
    @hygiene = @hygiene + 4
-   "♪ Rub-a-dub just relaxing in the tub ♫"
+   
    if @hygiene > 10
      @hygiene = 10
    end   
+   "♪ Rub-a-dub just relaxing in the tub ♫"
  end 
+ 
+ @hygiene = 13
+ 
+ def work_out
+   @hygiene = @hygiene - 3
+   if @hygiene < 0
+     @hygiene = 0
+   end   
+
+ end
 
 # person = Person.new("Stella", "$25")
  
