@@ -1,15 +1,15 @@
-# your code goes here
+
 
 class Person
-  attr_accessor :bank_account, :happiness, :hygiene
-  attr_reader :name
+ 
+  attr_reader :name, :bank_account, :happiness, :hygiene
   
-  def initialize(name, bank_account)
+  def initialize(name) #bank_account)
    
     @name = name
-    @bank_account = bank_account
-    @happiness = happiness
-    @hygiene = hygiene
+    @bank_account = 25
+    @happiness = 8
+    @hygiene = 8
   end
     
   
@@ -17,22 +17,36 @@ def bank_account=(new_bank_account)
   @bank_account = new_bank_account
   
 end
-  
- person = Person.new("Stella", "$25")
+
+def happiness=(new_happiness)
+  @happiness 
+  if new_happiness > 10
+    @happiness = 10
+  elsif new_happiness < 0
+    @happiness = 0
+  else 
+    @happiness =  new_happiness
+  end
+    
+end  
+
+
+# person = Person.new("Stella", "$25")
  
- puts person.name
- puts person.bank_account
+# puts person.name
+# puts person.bank_account
  
- 
+
+end 
+    
+
+
         
 #         self.hygiene += 4
     
 #         "♪ Rub-a-dub just relaxing in the tub ♫"
 #     end
  
-end 
-    
-
     
 # stella = Person.new("Stella", $25, 8, 8)
    
