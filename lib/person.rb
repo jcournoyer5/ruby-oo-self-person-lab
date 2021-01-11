@@ -19,7 +19,7 @@ def bank_account=(new_bank_account)
 end
 
 def happiness=(new_happiness)
-  @happiness 
+  @happiness = new_happiness
   if new_happiness > 10
     @happiness = 10
   elsif new_happiness < 0
@@ -29,6 +29,8 @@ def happiness=(new_happiness)
   end
     
 end  
+
+
 
 def hygiene=(new_hygiene)
   @hygiene 
@@ -42,14 +44,35 @@ def hygiene=(new_hygiene)
     
 end  
 
-def happiness=(new_happiness)
-  @happiness
-  if new_happiness > 7
-    puts true
+ def happy?
+  if @happiness > 7
+    true
   else
-    puts false
-  end   
-end  
+    false
+  end
+ end
+ 
+ def clean?
+   if @hygiene > 7
+     true
+   else
+     false
+   end
+ end 
+  
+ def get_paid(salary)
+   salary = 100
+   @bank_account = @bank_account + salary
+    "all about the benjamins"
+ end
+ 
+ def take_bath
+   @hygiene = @hygiene + 4
+   "♪ Rub-a-dub just relaxing in the tub ♫"
+   if @hygiene > 10
+     @hygiene = 10
+   end   
+ end 
 
 # person = Person.new("Stella", "$25")
  
