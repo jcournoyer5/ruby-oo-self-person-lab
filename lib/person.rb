@@ -1,7 +1,8 @@
 # your code goes here
 
 class Person
-  attr_accessor :name, :bank_account, :happiness, :hygiene
+  attr_accessor :bank_account, :happiness, :hygiene
+  attr_reader :name
   
   def initialize(name)
    
@@ -11,32 +12,18 @@ class Person
     @hygiene = hygiene
   end
     
-  def name
-    puts @name
-  end  
   
-  def bank_account
-    puts @bank_account
-  end
   
-  def happiness
-    puts @happiness
-  end
+ person = Person.new("Stella")
+  person
   
-  def hygiene
-    puts @hygiene
-    
-    def take_bath
+
         
-        self.hygiene += 4
+#         self.hygiene += 4
     
-        "♪ Rub-a-dub just relaxing in the tub ♫"
-    end
-  end
-    
- def read
-    puts "#{@name}"
- end  
+#         "♪ Rub-a-dub just relaxing in the tub ♫"
+#     end
+ 
 end 
     
 
