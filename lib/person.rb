@@ -89,12 +89,14 @@ end
    "♪ another one bites the dust ♫"
  end
  
- def call_friend(call)
+ def call_friend(called_friend)
      self.happiness += 3
+     called_friend.happiness += 3
      if @happiness  > 10
     @happiness = 10
      end
-     "Hi Penelope! It's Felix. How are you?"
+     "Hi #{called_friend.name}! It's #{self.name}. How are you?"
+    # binding.pry
  end    
  
  def start_conversation(friend, topic)
@@ -108,7 +110,7 @@ end
       #  "blah blah sun blah rain"
     # else    
     # end
-     if new_happiness < 0
+     if @happiness < 0
          @happiness = 0
      end
      if  @happiness > 10
