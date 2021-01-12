@@ -100,28 +100,38 @@ end
  end    
  
  def start_conversation(friend, topic)
-    # if topic = politics
-         @happiness = @happiness - 2
+     if topic == "politics"
          
-        # "blah blah partisan blah lobbyist"
-         
-    # elsif topic = weather
-         @happiness = @happiness + 1
-      #  "blah blah sun blah rain"
-    # else    
-    # end
+         self.happiness -= 2
+         friend.happiness -= 2
+         "blah blah partisan blah lobbyist"
+     end
+     
+        
      if @happiness < 0
          @happiness = 0
      end
-     if  @happiness > 10
-         @happiness = 10
-     end     
-         "blah blah partisan blah lobbyist"
- end
-# person = Person.new("Stella", "$25")
- 
-# puts person.name
-# puts person.bank_account
+    
+     
+     
+     if topic == "weather"
+         self.happiness += 1
+         friend.happiness += 1
+         "blah blah sun blah rain"
+     end
+    
+     
+     if @happiness  > 10
+        @happiness = 10
+     end
+     
+     if topic == "other"
+           "blah blah blah blah blah" 
+         
+     end
+      
+ end     
+
  
 
 end 
@@ -129,19 +139,7 @@ end
 
 
         
-#         self.hygiene += 4
-    
-#         "♪ Rub-a-dub just relaxing in the tub ♫"
-#     end
- 
-    
-# stella = Person.new("Stella", $25, 8, 8)
-   
-# puts stella.name
-# puts stella.read
-# puts stella.bank_account
-# puts stella.happiness
-# puts stella.hygiene
+
    
    
     
