@@ -1,4 +1,4 @@
-
+require "pry"
 
 class Person
  
@@ -67,27 +67,55 @@ end
  end
  
  def take_bath
-   @hygiene = @hygiene + 4
-   
-   if @hygiene > 10
+   self.hygiene += 4 
+  if @hygiene > 10
      @hygiene = 10
-   end   
-   "♪ Rub-a-dub just relaxing in the tub ♫"
+  end   
+  "♪ Rub-a-dub just relaxing in the tub ♫"
+
  end 
  
  @hygiene = 13
  
  def work_out
-   @hygiene = @hygiene - 3
+   self.hygiene -= 3
    if @hygiene < 0
      @hygiene = 0
    end  
-   @happiness = @happiness + 2
+   self.happiness += 2
    if @happiness > 10
      @happiness = 10
    end
+   "♪ another one bites the dust ♫"
  end
-
+ 
+ def call_friend(call)
+     self.happiness += 3
+     if @happiness  > 10
+    @happiness = 10
+     end
+     "Hi Penelope! It's Felix. How are you?"
+ end    
+ 
+ def start_conversation(friend, topic)
+    # if topic = politics
+         @happiness = @happiness - 2
+         
+        # "blah blah partisan blah lobbyist"
+         
+    # elsif topic = weather
+         @happiness = @happiness + 1
+      #  "blah blah sun blah rain"
+    # else    
+    # end
+     if new_happiness < 0
+         @happiness = 0
+     end
+     if  @happiness > 10
+         @happiness = 10
+     end     
+         "blah blah partisan blah lobbyist"
+ end
 # person = Person.new("Stella", "$25")
  
 # puts person.name
