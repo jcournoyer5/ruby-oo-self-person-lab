@@ -105,36 +105,29 @@ end
          self.happiness -= 2
          friend.happiness -= 2
          "blah blah partisan blah lobbyist"
-     end
      
-        
-     if @happiness < 0
-         @happiness = 0
-     end
-    
-     
-     
-     if topic == "weather"
+     elsif topic == "weather"
          self.happiness += 1
          friend.happiness += 1
          "blah blah sun blah rain"
-     end
-    
      
-     if @happiness  > 10
-        @happiness = 10
-     end
-     
-     if topic == "other"
-           "blah blah blah blah blah" 
-         
-     end
+     else 
+         "blah blah blah blah blah" 
+     end      
+    #   if @happiness  > 10
+    #     @happiness = 10
+    #   end
+    #     if @happiness < 0
+    #       @happiness = 0
+    #     end
+ end    
+end
       
- end     
+     
 
  
 
-end 
+
     
 
 
